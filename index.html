@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #000;
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./login.jpg');
+  min-height: 100%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='CLAVE' && document.form.login.value=='USUARIO'){
+        alert("\x4C\x41\x20\x46\x4C\x41\x47\x20\x45\x53\x20\x7B\x75\x73\x31\x6E\x67\x5F\x68\x74\x6D\x6C\x5F\x68\x33\x72\x33\x7D")
+        
+    } 
+    else{ 
+         alert("Por favor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <FORM name=form action="TU_PAGINA_WEB.HTML">
+
+    <P>Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <INPUT type=text name=login> 
+    <P>Contraseña: <INPUT type=password name=password> 
+    <INPUT onclick=go() type=button disabled value=Acceder>
+
+</FORM>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Las credenciales <span class="w3-hide-small">están-</span>aquí</span>
+  </div>
+</div>
+ 
+
+
+
+
+
+</body>
+</html>
